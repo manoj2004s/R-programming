@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://manoj07.shinyapps.io/language/ -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="_w_2b123ecb/">--><base href=".">
+    <script type="text/javascript">
+(function() {
+  var workerId = '_w_2b123ecb';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+      <script type="text/javascript">
+      var __connect = {
+        shinyPre101: false
+      }
+      </script>
+      
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.10.0];shiny-busy-indicators[1.10.0];shiny-javascript[1.10.0];shinyWidgets[0.8.7];bootstrap-select[1.13.8];bootstrap[3.4.1]</script>
+<script src="./Language Learning App_files/jquery.min.js.download"></script>
+<link href="./Language Learning App_files/shiny.min.css" rel="stylesheet">
+<link href="./Language Learning App_files/busy-indicators.css" rel="stylesheet">
+<script src="./Language Learning App_files/shiny.min.js.download"></script>
+<link href="./Language Learning App_files/shinyWidgets.min.css" rel="stylesheet">
+<script src="./Language Learning App_files/shinyWidgets-bindings.min.js.download"></script>
+<link href="./Language Learning App_files/bootstrap-select.min.css" rel="stylesheet">
+<script src="./Language Learning App_files/bootstrap-select.min.js.download"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./Language Learning App_files/bootstrap.min.css" rel="stylesheet">
+<link href="./Language Learning App_files/bootstrap-accessibility.min.css" rel="stylesheet">
+<script src="./Language Learning App_files/bootstrap.min.js.download"></script>
+<script src="./Language Learning App_files/bootstrap-accessibility.min.js.download"></script>  <title>Language Learning App</title>
+<script src="./Language Learning App_files/sockjs.min.js.download"></script>
+<script src="./Language Learning App_files/shiny-server-client.min.js.download"></script>
+<script>preShinyInit({reconnect:true,reconnectTimeout:15000,disableProtocols:["htmlfile","xdr-streaming","xdr-polling","websocket"],token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
+<link rel="stylesheet" type="text/css" href="./Language Learning App_files/rstudio-connect.css">
+<link rel="stylesheet" type="text/css" href="./Language Learning App_files/shinyapps.css"></head>
+<body class="">
+<script type="text/javascript" src="./Language Learning App_files/iframeResizer.contentWindow.min.js.download"></script>
+<script type="text/javascript" src="./Language Learning App_files/shinyapps.frame.content.js.download"></script>
+<script type="text/javascript" src="./Language Learning App_files/shinyapps.js.download"></script>
+  <div class="container-fluid">
+    <h2>Language Learning App</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="well" role="complementary">
+          <h4>Flashcards</h4>
+          <div class="form-group shiny-input-container">
+            <label class="control-label" id="word_picker-label" for="word_picker">Select a word to learn:</label>
+            <div class="dropdown bootstrap-select form-control bs3"><select data-live-search="true" data-state-input="true" id="word_picker" class="selectpicker form-control shiny-bound-input" autocomplete="off"><option value="Bonjour">Bonjour</option>
+<option value="Merci">Merci</option>
+<option value="Pomme">Pomme</option>
+<option value="Chien">Chien</option>
+<option value="Chat">Chat</option></select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="word_picker" title="Bonjour"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Bonjour</div></div> </div><span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner open" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner " role="presentation"></ul></div></div></div>
+          </div>
+          <pre class="shiny-text-output noplaceholder shiny-bound-output" id="translation" aria-live="polite">Translation: Hello</pre>
+          <br>
+          <button id="quiz_start" type="button" class="btn btn-default action-button shiny-bound-input">Start Quiz</button>
+        </form>
+      </div>
+      <div class="col-sm-8" role="main">
+        <div class="tabbable">
+          <ul class="nav nav-tabs" data-tabsetid="3112" role="tablist">
+            <li class="active" role="presentation">
+              <a href="https://manoj07.shinyapps.io/language/_w_2b123ecb/#tab-3112-1" data-toggle="tab" data-bs-toggle="tab" data-value="Flashcards" role="tab" id="ui-tab-437" tabindex="0" aria-selected="true" aria-controls="tab-3112-1">Flashcards</a>
+            </li>
+            <li role="presentation">
+              <a href="https://manoj07.shinyapps.io/language/_w_2b123ecb/#tab-3112-2" data-toggle="tab" data-bs-toggle="tab" data-value="Quiz" role="tab" id="ui-tab-767" tabindex="-1" aria-selected="false" aria-controls="tab-3112-2">Quiz</a>
+            </li>
+          </ul>
+          <div class="tab-content" data-tabsetid="3112">
+            <div class="tab-pane active" data-value="Flashcards" id="tab-3112-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-437">
+              <h3>Learn Vocabulary</h3>
+              <div id="flashcard" class="shiny-text-output shiny-bound-output" aria-live="polite">Word: Bonjour</div>
+            </div>
+            <div class="tab-pane" data-value="Quiz" id="tab-3112-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-767">
+              <div id="quiz_ui" class="shiny-html-output shiny-bound-output recalculating" aria-live="polite"></div>
+              <pre class="shiny-text-output noplaceholder shiny-bound-output recalculating" id="quiz_result" aria-live="polite"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="ss-connect-dialog" style="display: none;"><label>Attempting to reconnect...</label><label>&nbsp;</label></div><div id="ss-overlay" class="ss-gray-out" style="display: none;"></div></body></html>
